@@ -13,7 +13,7 @@ char ver[] = "version Seb JACQ 31-12-2021";
 // Avance fixe jusqu'à Nplancher et temps de charge bobine plus régulier qu'avant
 // Temps de charge bobine:
 //  -En dessous de Nplancher le temps de charge bobine correspond au passage de la cible devant le capteur (Sécurité mise à 1s, pour préserver les bobines)-> si cible devant capteur pendant plus d'une seconde le courant est coupé)
-//  -Entre Nplancher et Nseuil le temps de charge est diminue de Tplancher/360*angleCible quand on est à Nplancher jusqu'a TchargeBob qund on est à Nseuil
+//  -Entre Nplancher et Nseuil le temps de charge est diminue de Tplancher/360*angleCible quand on est à Nplancher jusqu'a TchargeBob quand on est à Nseuil
 //  -Au dessus de Nplancher le temps de charge bobine correspond à Tchargebob
 //  -A haut régime si T (1/2 tour moteur) est inférieur à TchargeBob, alors on réduit de temps d'alimentation bobine
 //******************************************************************************
