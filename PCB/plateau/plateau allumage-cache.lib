@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Sensor_Magnetic_A1302ELHLT-T
+#
+DEF Sensor_Magnetic_A1302ELHLT-T U 0 20 Y Y 1 F N
+F0 "U" 0 450 50 H V L CNN
+F1 "Sensor_Magnetic_A1302ELHLT-T" 0 350 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23W" 0 -350 50 H I L CIN
+F3 "" -100 0 50 H I C CNN
+ALIAS A1302ELHLT-T A1302KLHLT-T A3214ELHLT-T
+$FPLIST
+ SOT?23W*
+$ENDFPLIST
+DRAW
+S -200 300 200 -300 0 1 10 f
+X VCC 1 -100 400 100 D 50 50 1 1 W
+X VOUT 2 300 0 100 L 50 50 1 1 O
+X GND 3 -100 -400 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

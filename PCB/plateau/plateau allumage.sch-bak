@@ -1,0 +1,92 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Magnetic:A1302ELHLT-T U1
+U 1 1 61D9CBE1
+P 4200 3700
+F 0 "U1" H 3970 3746 50  0000 R CNN
+F 1 "A1302ELHLT-T" H 3970 3655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23W" H 4200 3350 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx" H 4100 3700 50  0001 C CNN
+	1    4200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Magnetic:A1302ELHLT-T U2
+U 1 1 61D9D574
+P 5800 3700
+F 0 "U2" H 5570 3746 50  0000 R CNN
+F 1 "A1302ELHLT-T" H 5570 3655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23W" H 5800 3350 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx" H 5700 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 3700 2    50   Input ~ 0
+capteur1
+Text GLabel 4600 3700 2    50   Input ~ 0
+Capteur2
+Wire Wire Line
+	4500 3700 4600 3700
+Wire Wire Line
+	6100 3700 6300 3700
+$Comp
+L power:GND #PWR0101
+U 1 1 61DA9D41
+P 4100 4200
+F 0 "#PWR0101" H 4100 3950 50  0001 C CNN
+F 1 "GND" H 4105 4027 50  0000 C CNN
+F 2 "" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61DAA12F
+P 5700 4200
+F 0 "#PWR0102" H 5700 3950 50  0001 C CNN
+F 1 "GND" H 5705 4027 50  0000 C CNN
+F 2 "" H 5700 4200 50  0001 C CNN
+F 3 "" H 5700 4200 50  0001 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4100 4100 4200
+Wire Wire Line
+	5700 4100 5700 4200
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61DB80A0
+P 5000 2600
+F 0 "H1" H 5100 2649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5100 2558 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5000 2600 50  0001 C CNN
+F 3 "~" H 5000 2600 50  0001 C CNN
+	1    5000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3300 5000 3300
+Wire Wire Line
+	5000 3300 5000 2700
+Wire Wire Line
+	5700 3300 5700 2700
+Wire Wire Line
+	5700 2700 5000 2700
+Connection ~ 5000 2700
+$EndSCHEMATC
